@@ -1,0 +1,122 @@
+#tabContainer {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    border: 3px solid blue;
+
+}
+
+#gameContainer {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    margin-top: 70px;
+}
+
+body {
+    font-family: "Anta", sans-serif;
+    background-image: url("/assets/image/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    text-align: center;
+    font-size: 60px;
+}
+
+.column {
+    display: flex;
+    flex: 1;
+}
+
+.cell {
+    flex: 1;
+    border: 1px solid rgb(238, 7, 7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.croix {
+    width: 50%;
+
+}
+
+.rond {
+    width: 50%;
+
+}
+
+#retry {
+    width: 520px;
+    font-size: 40px;
+    border: 2px solid rgb(64, 8, 248);
+    border-radius: 20px;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    margin: auto;
+    margin-top: 80px;
+    padding: 10px;
+    color: red;
+
+}
+
+#retry:hover {
+    transform: scale(1.1);
+}
+
+#score {
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+}
+
+#retryScore {
+    width: 80%;
+    font-size: 40px;
+    text-align: center;
+    border: 1px solid rgb(12, 19, 247);
+    border-radius: 20px;
+    padding: 10px;
+    cursor: pointer;
+    color: red;
+}
+
+#retryScore:hover {
+    transform: scale(1.1);
+}
+
+#winText {
+
+    font-size: 40px;
+    text-align: center;
+}
+
+.playerChoice {
+    display: flex;
+    justify-content: center;
+    gap: 170px;
+    font-size: 30px;
+    margin-top: 100px;
+}
+
+#player {
+
+    cursor: pointer;
+    border: 1px solid blue;
+    border-radius: 20px;
+    padding: 10px;
+    color: red;
+}
+
+#bot {
+    cursor: pointer;
+    border: 1px solid blue;
+    border-radius: 20px;
+    padding: 10px;
+    color: red;
+}

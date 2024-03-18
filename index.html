@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <title>morpion</title>
+</head>
+
+<body>
+    <header>
+        <h1>Le Morpion</h1>
+    </header>
+    <main>
+        <div class="playerChoice">
+            <p id="player">player vs player</p>
+            <p id="bot" "> player vs bot </p>
+        </div>
+
+        <div id="gameContainer">
+
+            <div id="tabContainer"></div>
+            <div id="score">
+                <p id="circleScore">score équipe des ronds = 0</p>
+                <p id="croixScore">score équipe des croix = 0</p>
+                <p onclick="resetScore()" id="retryScore">reset score</p>
+            </div>
+
+        </div>
+        <p id="winText"></p>
+        <p onclick="retry()" id="retry">recommencer une partie </p>
+    </main>
+    <footer></footer>
+    <script src="/assets/javascript/script.js"></script>
+</body>
+
+</html>
