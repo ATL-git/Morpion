@@ -72,10 +72,7 @@ function replace(lign, index, indey) {
         lap++
 
     }
-    if (lap > 9) {
-        winText.textContent = ` Egalité , recommencez une parti pour tenter de determiner le gagnant !`
-        gameOver = true
-    }
+
 
 }
 
@@ -95,7 +92,7 @@ function cpuPlay() {
 }
 
 function win() {
-    
+
     const winText = document.querySelector('#winText')
     for (let i = 0; i < 3; i++) {
         if (array[i][0] != "" && array[i][0] == array[i][1] && array[i][1] == array[i][2]) {
@@ -171,7 +168,10 @@ function win() {
         }
 
     }
-
+    if (lap >= 9) {
+        winText.textContent = ` Egalité , recommencez une parti pour tenter de determiner le gagnant !`
+        gameOver = true
+    }
 }
 
 function resetScore() {
