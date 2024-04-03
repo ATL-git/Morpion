@@ -45,7 +45,7 @@ function replace(lign, index, indey) {
             const image = document.createElement('img')
             image.classList.add('rond')
             lign.appendChild(image)
-            image.src = `/assets/image/rond.png`
+            image.src = `./assets/image/rond.png`
             array[index][indey] = "o"
             win()
 
@@ -55,7 +55,7 @@ function replace(lign, index, indey) {
             const image = document.createElement('img')
             image.classList.add('croix')
             lign.appendChild(image)
-            image.src = `/assets/image/croix.jpg`
+            image.src = `./assets/image/croix.jpg`
             array[index][indey] = "x"
             win()
             if (cpuMode == true && gameOver == false) {

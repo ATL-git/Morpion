@@ -16,7 +16,7 @@
 
 body {
     font-family: "Anta", sans-serif;
-    background-image: url("/assets/image/background.jpg");
+    background-image: url("./assets/image/background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
